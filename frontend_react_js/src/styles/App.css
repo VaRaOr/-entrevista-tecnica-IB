@@ -1,0 +1,144 @@
+/* ///APP/// */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ///COLORS/// */
+:root {
+  --blue: #0366fa;
+  --white: #ffffff;
+  --black: #343434;
+  --holder: #40a9ff
+}
+
+/* ///INPUTSEARCH/// */
+.form-search {
+  display: flex;
+  height: 56px;
+  width: 1136px;
+  margin: 80px 0;
+}
+
+.input-search {
+  flex-grow: 1;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  padding-left: 12px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 98px;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.search:hover{
+    background-color: var(--holder);
+    transition: all 0.5s
+}
+.search:active {
+  opacity: 0.5;
+  transition: 0s
+}
+
+svg {
+  height: 12.5px;
+  width: 12.5px;
+}
+
+.text-search {
+  padding-left: 5px;
+  font-size: 14px;
+  width: 44px;
+  text-align: center;
+}
+
+/* ///CARDS/// */
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* gap: 5px; */
+  row-gap: 39px;
+  column-gap: 15px;
+  width: 1136px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.card {
+  display: flex;
+  height: 180px;
+  width: 560px;
+  align-items: center;
+}
+
+.product-img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgba(52, 52, 52, 0.25);
+}
+
+.product-info {
+  padding-left: 23px;
+}
+.product-name {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.product-id {
+  font-size: 14px;
+  color: #757575;
+  padding-bottom: 19px;
+  font-weight: 400;
+}
+
+.container-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #757575;
+}
+.product-price-number {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ///FOOOTER/// */
+
+.results {
+  display: flex;
+  width: 1150px;
+  padding: 13px 0;
+  font-size: 14px;
+  color: #757575;
+}
