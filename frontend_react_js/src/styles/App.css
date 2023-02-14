@@ -36,6 +36,12 @@ a {
   padding-left: 12px;
 }
 
+.input-search:focus{
+  outline: none;
+  border: 1px  solid black;
+  border-right: 0;
+}
+
 .search {
   display: flex;
   align-items: center;
